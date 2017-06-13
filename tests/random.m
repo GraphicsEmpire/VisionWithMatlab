@@ -1,1 +1,1 @@
-%%%% Author: Pourya Shirazian%% display Gaussian noise %%pkg load image;close all;noise = randn([512 512 1]) .* 40;imshow(noise);
+%% Author: Pourya Shirazian% display Gaussian noise %if ( isoctave() == 1 )     pkg load image;endclose all;noise = randn([512 512 1]) .* 40;imshow(noise);

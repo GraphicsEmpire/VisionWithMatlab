@@ -1,0 +1,95 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>random</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-06-13"><meta name="DC.source" content="random.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">functions</a></li></ul></div><pre class="codeinput"><span class="comment">%</span>
+<span class="comment">% Author: Pourya Shirazian</span>
+<span class="comment">% display Gaussian noise</span>
+<span class="comment">%</span>
+
+A = 1;
+<span class="keyword">if</span> ( A == 1 )
+    pkg <span class="string">load</span> <span class="string">image</span>;
+<span class="keyword">end</span>
+
+
+close <span class="string">all</span>;
+
+noise = randn([512 512 1]) .* 40;
+imshow(noise);
+</pre><pre class="codeoutput">Error: File: C:\platform\repos\VisionWithMatlab\tests\random.m Line: 18 Column: 1
+Function definitions are not permitted in this context.
+</pre><h2>functions<a name="2"></a></h2><pre class="codeinput"><span class="keyword">function</span> retval = isOctave
+  <span class="keyword">persistent</span> cacheval;  <span class="comment">% speeds up repeated calls</span>
+
+  <span class="keyword">if</span> isempty (cacheval)
+    cacheval = (exist (<span class="string">'OCTAVE_VERSION'</span>, <span class="string">'builtin'</span>) &gt; 0);
+  <span class="keyword">end</span>
+
+  retval = cacheval;
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Author: Pourya Shirazian% display Gaussian noise %A = 1;if ( A == 1 )     pkg load image;endclose all;noise = randn([512 512 1]) .* 40;imshow(noise);%% functionsfunction retval = isOctave  persistent cacheval;  % speeds up repeated calls  if isempty (cacheval)    cacheval = (exist ('OCTAVE_VERSION', 'builtin') > 0);  end  retval = cacheval;end
+##### SOURCE END #####
+--></body></html>
