@@ -1,0 +1,1 @@
+%% function find template 1D%function index = findtemplate1d(t, s)    % compute k  k = int8( size(t, 2) / 2);  % index = k;    for i=-k:k    disp(i);  endforendfunctionss = [-1 0 0 1 1 1 0 -1 -1 0 1 0 0 -1];tt = [1 1 0];index = findtemplate1d(tt, ss);
