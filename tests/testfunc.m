@@ -1,0 +1,1 @@
+function [] = testfunc()  %clear all  a = myfunc( 1 );  aendfunction;%---------------------------------% Auxiliary functionsfunction retval = myfunc( a )  retval = 2 * a;endfunction;
